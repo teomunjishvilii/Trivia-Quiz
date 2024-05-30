@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="styles/css/global.css" />
+
+    <title>Trivia Quiz</title>
+  </head>
+  <body class="home_page">
+    <div class="main_wrapper">
+      <div class="main_wrapper_content">
+        <h1>Let's quiz</h1>
+        <p>Ready to test your knowledge?</p>
+        <button id="start-btn">Get started</button>
+        <div class="time">
+          <div class="svg"><img src="./assets/clock-solid.svg" /></div>
+          <div><p>Takes 10 minutes</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Questions -->
+    <div class="quiz-container" style="display: none">
+      <div class="question-container">
+        <h2 class="question-number"></h2>
+        <p class="question-text"></p>
+        <ul class="answers"></ul>
+        <div class="question_buttons">
+          <button class="prev-question">Previous Question</button>
+          <button class="next-question">Next Question</button>
+        </div>
+      </div>
+
+      <button id="submit-btn">Submit</button>
+    </div>
+
+    <div class="score-container"></div>
+
+    <!-- JS link -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
